@@ -1,0 +1,304 @@
+.navbar-header.tv-transparent-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  transform: none !important;
+}
+
+.navbar-container.navbar-edge-to-edge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  max-width: 100% !important;
+  padding: 0 20px;
+  margin: 0;
+  position: relative;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  position: relative;
+}
+
+.navbar-left-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-logo.tv-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-icon-wrapper.tv-logo-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #10B981, #00E5FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+}
+
+.logo-text.tv-logo-text {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+
+.logo-ai {
+  color: var(--accent-emerald);
+}
+
+/* Center Navigation Links - Centered in middle of header */
+.navbar-links-desktop.tv-nav-links-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background: transparent !important;
+  border: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+.tv-nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #CBD5E1;
+  transition: color 0.2s ease;
+  background: transparent !important;
+  border: none !important;
+  padding: 4px 0;
+  text-decoration: none;
+}
+
+.tv-nav-link:hover {
+  color: #FFFFFF;
+}
+
+.tv-nav-link.active {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+/* DYNAMIC BLACK TEXT WHEN NAVBAR OVERLAPS WHITE SECTIONS (Market Summary) */
+.navbar-header.tv-navbar-light .logo-text.tv-logo-text {
+  color: #0F172A !important;
+}
+
+.navbar-header.tv-navbar-light .tv-nav-link {
+  color: #0F172A !important;
+  font-weight: 700 !important;
+}
+
+.navbar-header.tv-navbar-light .tv-nav-link:hover,
+.navbar-header.tv-navbar-light .tv-nav-link.active {
+  color: #059669 !important;
+}
+
+.navbar-header.tv-navbar-light .tv-lang-badge {
+  color: #0F172A !important;
+}
+
+.navbar-header.tv-navbar-light .tv-theme-toggle {
+  background: rgba(0, 0, 0, 0.06) !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+  color: #0F172A !important;
+}
+
+.navbar-header.tv-navbar-light .mobile-menu-btn {
+  background: rgba(0, 0, 0, 0.06) !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+  color: #0F172A !important;
+}
+
+/* Far Right Actions (Language & Theme Toggle ONLY) */
+.navbar-actions.tv-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tv-lang-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #94A3B8;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.tv-lang-badge:hover {
+  color: #FFFFFF;
+}
+
+.tv-theme-toggle {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94A3B8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.tv-theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  padding: 6px;
+  color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.mobile-menu-drawer {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  background: rgba(9, 14, 23, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  animation: slide-down 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-drawer-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  color: #CBD5E1;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #FFFFFF;
+}
+
+.mobile-nav-link.active {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--accent-emerald);
+  font-weight: 700;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 992px) {
+  .navbar-links-desktop.tv-nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .tv-search-wrapper {
+    width: 140px;
+    padding: 4px 10px;
+  }
+
+  .tv-search-wrapper:focus-within {
+    width: 170px;
+  }
+
+  .tv-search-input {
+    font-size: 0.78rem;
+  }
+
+  .tv-logo-text {
+    font-size: 1.05rem;
+  }
+}

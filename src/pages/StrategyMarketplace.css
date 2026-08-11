@@ -1,0 +1,130 @@
+.marketplace-page {
+  padding: 40px 0 80px 0;
+}
+
+.marketplace-header {
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 24px;
+}
+
+.marketplace-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.marketplace-header p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.marketplace-grid {
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.marketplace-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-top-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.st-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-purple);
+  text-transform: uppercase;
+}
+
+.marketplace-card h2 {
+  font-size: 1.4rem;
+}
+
+.risk-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+.risk-low { background: rgba(16, 185, 129, 0.18); color: var(--accent-emerald); }
+.risk-moderate { background: rgba(245, 158, 11, 0.18); color: var(--accent-amber); }
+.risk-high { background: rgba(244, 63, 94, 0.18); color: var(--accent-rose); }
+
+.st-author {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.st-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin-bottom: 16px;
+}
+
+.rules-summary-box {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 20px;
+}
+
+.rules-summary-box h4 {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+
+}
+
+.rules-summary-box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.st-stats-grid {
+  margin-bottom: 24px;
+}
+
+.st-stat-item {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  text-align: center;
+}
+
+.stat-lbl {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+.stat-v {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.flex-1 { flex: 1; }

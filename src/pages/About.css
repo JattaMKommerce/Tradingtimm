@@ -1,0 +1,81 @@
+.about-page {
+  padding: 40px 0 80px 0;
+}
+
+.about-header {
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 24px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 6px;
+}
+
+.about-header p {
+  color: var(--accent-purple);
+  font-size: 1.15rem;
+
+  font-weight: 600;
+}
+
+.about-mascot-row {
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.about-mascot-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.big-mascot-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
+}
+
+.about-mascot-left h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.about-mascot-left p {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.about-pillars-grid {
+  gap: 24px;
+}
+
+.pillar-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pillar-card h3 {
+  font-size: 1.2rem;
+}
+
+.pillar-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-mascot-left { flex-direction: column; text-align: center; }
+}

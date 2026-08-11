@@ -1,0 +1,145 @@
+.glossary-page {
+  padding: 40px 0 80px 0;
+}
+
+.glossary-header {
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 24px;
+}
+
+.glossary-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.glossary-header p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto 28px auto;
+}
+
+.glossary-search-box {
+  max-width: 520px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.glossary-search-box input {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  padding: 12px 20px 12px 48px;
+  color: var(--text-primary);
+  font-size: 0.92rem;
+  font-family: var(--font-body);
+  outline: none;
+}
+
+.glossary-cat-pills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 24px 0 36px 0;
+  flex-wrap: wrap;
+}
+
+.cat-pill {
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cat-pill.active {
+  background: rgba(139, 92, 246, 0.18);
+  color: var(--accent-purple);
+  border-color: var(--accent-purple);
+}
+
+.glossary-grid {
+  gap: 24px;
+}
+
+.glossary-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.glossary-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.glossary-card-top h3 {
+  font-size: 1.25rem;
+  margin: 0;
+
+}
+
+.glossary-cat-badge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: rgba(139, 92, 246, 0.12);
+  color: var(--accent-purple);
+  font-weight: 700;
+}
+
+.glossary-simple-def {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.glossary-sub-block {
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+
+.sub-block-title {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.glossary-sub-block.visual {
+  background: rgba(139, 92, 246, 0.08);
+  border-left: 3px solid var(--accent-purple);
+}
+.glossary-sub-block.visual .sub-block-title { color: var(--accent-purple); }
+.glossary-sub-block.visual p { font-size: 0.85rem; font-weight: 600; color: var(--text-primary); }
+
+.glossary-sub-block.analogy {
+  background: rgba(245, 158, 11, 0.08);
+  border-left: 3px solid var(--accent-amber);
+}
+.glossary-sub-block.analogy .sub-block-title { color: var(--accent-amber); }
+.glossary-sub-block.analogy p { font-size: 0.82rem; color: var(--text-secondary); }
+
+.glossary-sub-block.tech {
+  background: rgba(0, 0, 0, 0.2);
+}
+.glossary-sub-block.tech .sub-block-title { color: var(--text-muted); }
+.glossary-sub-block.tech p { font-size: 0.8rem; color: var(--text-muted); font-family: monospace; }
+
+.glossary-explain-btn {
+  margin-top: auto;
+  font-size: 0.8rem;
+  padding: 8px;
+  justify-content: center;
+}

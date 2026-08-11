@@ -1,0 +1,73 @@
+.ai-vs-auto-section {
+  padding: 80px 0;
+  background: var(--bg-main);
+  border-top: 1px solid var(--border-color);
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.ai-concept-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 16px;
+}
+
+.ai-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.ai-card-header h3 {
+  font-size: 1rem;
+  margin: 0;
+
+}
+
+.ai-icon-box {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ai-question {
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.ai-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.ai-analogy-box {
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 3px solid var(--border-highlight);
+  padding: 8px 10px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1200px) {
+  .grid-5 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .grid-5 { grid-template-columns: 1fr; }
+}

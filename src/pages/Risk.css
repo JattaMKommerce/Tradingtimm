@@ -1,0 +1,101 @@
+.risk-page {
+  padding: 40px 0 80px 0;
+}
+
+.risk-header {
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 24px;
+}
+
+.risk-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 6px;
+}
+
+.risk-subtitle-text {
+  font-size: 1.15rem;
+  color: var(--accent-rose);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.risk-pipeline-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.risk-pipe-step {
+  background: rgba(244, 63, 94, 0.1);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.r-arrow {
+  color: var(--text-muted);
+}
+
+.principles-grid {
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.principle-card {
+  padding: 24px;
+}
+
+.principle-card h3 {
+  font-size: 1.15rem;
+
+  margin-bottom: 10px;
+}
+
+.p-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.p-analogy {
+  background: rgba(245, 158, 11, 0.08);
+  border-left: 3px solid var(--accent-amber);
+  padding: 8px 12px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.critical-warning-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 28px;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.critical-warning-card h3 {
+  color: var(--accent-amber);
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.critical-warning-card p {
+  font-size: 0.9rem;
+  color: #FDE68A;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .r-arrow { display: none; }
+}

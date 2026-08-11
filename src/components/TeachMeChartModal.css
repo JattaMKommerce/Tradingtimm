@@ -1,0 +1,116 @@
+.teach-chart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(7, 10, 18, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+
+.teach-chart-modal {
+  width: 100%;
+  max-width: 680px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.teach-chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.teach-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.teach-title-icon {
+  color: var(--accent-purple);
+}
+
+.teach-title-group h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.teach-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.teach-close-btn {
+  color: var(--text-secondary);
+  padding: 6px;
+  border-radius: var(--radius-sm);
+}
+
+.teach-close-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.teach-chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.teach-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.teach-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.teach-card-icon.green { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); }
+.teach-card-icon.split { background: rgba(255, 255, 255, 0.08); display: flex; gap: 4px; }
+.teach-card-icon.purple { background: rgba(139, 92, 246, 0.15); color: var(--accent-purple); }
+.teach-card-icon.amber { background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); }
+
+.teach-card h4 {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.teach-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.warning-card {
+  border-color: rgba(245, 158, 11, 0.3);
+  background: rgba(245, 158, 11, 0.05);
+}
+
+@media (max-width: 600px) {
+  .teach-chart-grid {
+    grid-template-columns: 1fr;
+  }
+}

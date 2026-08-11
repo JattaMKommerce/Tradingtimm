@@ -1,0 +1,156 @@
+.portfolio-page {
+  padding: 40px 0 80px 0;
+}
+
+.portfolio-header {
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 24px;
+}
+
+.portfolio-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 6px;
+}
+
+.portfolio-header p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+
+}
+
+.port-metrics-grid {
+  margin-bottom: 24px;
+}
+
+.port-metric-card {
+  padding: 20px;
+  text-align: center;
+}
+
+.p-lbl {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.p-val {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  display: block;
+}
+
+.p-sub {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.port-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.chart-card, .positions-card {
+  padding: 28px;
+}
+
+.chart-card h3, .positions-card h3 {
+  font-size: 1.15rem;
+
+  margin-bottom: 16px;
+}
+
+.allocation-legend-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.alloc-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.88rem;
+}
+
+.alloc-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.alloc-name {
+  flex: 1;
+  color: var(--text-secondary);
+}
+
+.alloc-pct {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.positions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pos-item {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.pos-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.pos-symbol {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.05rem;
+  margin-right: 8px;
+}
+
+.pos-type {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.pos-pnl {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.pos-strategy {
+  font-size: 0.82rem;
+  color: var(--accent-purple);
+  margin-bottom: 8px;
+}
+
+.pos-stops-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 6px;
+}
+
+@media (max-width: 850px) {
+  .port-main-grid { grid-template-columns: 1fr; }
+}

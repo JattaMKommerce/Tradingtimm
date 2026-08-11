@@ -1,0 +1,126 @@
+.risk-meter-wrapper {
+  padding: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.risk-meter-header {
+  margin-bottom: 28px;
+}
+
+.risk-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.risk-icon {
+  color: var(--accent-purple);
+}
+
+.risk-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.risk-calc-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.calc-group {
+  margin-bottom: 20px;
+}
+
+.calc-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.calc-label-row label {
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.calc-val {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.calc-group input[type='range'] {
+  width: 100%;
+  accent-color: var(--accent-purple);
+  margin-bottom: 4px;
+}
+
+.calc-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+
+}
+
+.calc-results-col {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.calc-results-col h4 {
+  font-size: 1rem;
+
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+.result-metric-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+}
+
+.res-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+.res-val {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.res-sub {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.explain-risk-btn {
+  font-size: 0.8rem;
+  padding: 8px;
+  justify-content: center;
+}
+
+.risk-warning-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(244, 63, 94, 0.1);
+  border: 1px solid rgba(244, 63, 94, 0.3);
+  color: #FECDD3;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 768px) {
+  .risk-calc-grid { grid-template-columns: 1fr; }
+}
